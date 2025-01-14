@@ -1,0 +1,42 @@
+[project]
+name = "science4ai"
+authors = [{ name = "Ling Yu", email = "yulingsc@outlook.com" }]
+description = "My personal package for AI and science"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+version = "1.0.0"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Private :: Do Not Upload",
+]
+dependencies = []
+
+
+[project.optional-dependencies]
+tests = ["pytest"]
+
+[project.scripts]
+tests = 'science4ai.scripts:main'
+
+
+[project.urls]
+Homepage = "https://github.com/shaijing/science4ai"
+Documentation = "https://github.com/shaijing/science4ai"
+Repository = "https://github.com/shaijing/science4ai"
+Issues = "https://github.com/shaijing/science4ai/issues"
+Changelog = "https://github.com/shaijing/science4ai/CHANGELOG.md"
+Download = "https://github.com/shaijing/science4ai/releases"
+
+
+[build-system]
+build-backend = 'mesonpy'
+requires = ['meson-python']
+
+[tool.meson-python.args]
+install = ['--tags=runtime,python-runtime']
+
+[tool.uv]
+required-version = ">=0.5.18"

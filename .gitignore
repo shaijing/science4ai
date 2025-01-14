@@ -1,0 +1,6 @@
+.venv/
+build/
+dist/
+*.bat
+uv.lock
+*.pyc
