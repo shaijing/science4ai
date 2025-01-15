@@ -40,3 +40,4 @@ install = ['--tags=runtime,python-runtime']
 
 [tool.uv]
 required-version = ">=0.5.18"
+dev-dependencies = ["meson-python>=0.17.1"]

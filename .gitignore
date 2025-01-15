@@ -4,3 +4,4 @@ dist/
 *.bat
 uv.lock
 *.pyc
+.vscode/
